@@ -9,9 +9,12 @@ Author: Ivan Mora Perez - ivan@opentodo.net
 
 List of Scripts
 ================
-*   [__distributed-cmd__][distributed-cmd.pl]
+*   [__distributed-cmd__][1]
 
 	Runs a command by ssh on a list of servers given. Before run the command on the remote server a check command is executed, if returns 0 then the command will be run on the server. Example:
 
 	./distributed-cmd.pl --hosts srv1 srv2 --check "pidof apache2" --command "sudo /usr/sbin/service apache2 restart" --user root
+	
+[1]: distributed-cmd.pl
+
 
