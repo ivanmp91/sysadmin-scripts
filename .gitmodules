@@ -1,0 +1,9 @@
+[submodule "check_http_requests"]
+	path = check_http_requests
+	url = https://github.com/opentodonet/check_http_requests.git
+[submodule "blockips-nginx"]
+	path = blockips-nginx
+	url = https://github.com/opentodonet/blockips-nginx.git
+[submodule "rloggerd"]
+	path = rloggerd
+	url = https://github.com/opentodonet/rloggerd.git
