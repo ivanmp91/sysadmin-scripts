@@ -31,8 +31,14 @@ List of Scripts
 
 	./rloggerd.pl --server 192.168.1.136 --file /var/log/mysqld.log --facility local0 --priority warning --socket tcp --tag "hello world" --daemon
 
+*   [__nagios-status-mklivestatus__][5]
+
+	Script to get all the nagios alarms via mk-livestatus for services and hosts in status of Warning, Critical or Uknown Where the notifications are enabled and the check is not acknowledged. Use the --string or --html to choose the output you want. If html is enabled then will generate an output in html with a table of two columns for each alarm, one with the check command and the output with a background color of red, yellow or orange depending of the check status, and the second one the hostname affected with a url to the nagios page for the host. Edit the html to put your own stuff like styles and nagios url, this is only a simple template to show the alerts with a basic styles.
+
+	./nagios-status-mklivestatus.pl --html > out.html
+
 [1]: distributed-cmd.pl
 [2]: https://github.com/opentodonet/check_http_requests
 [3]: https://github.com/opentodonet/blockips-nginx
 [4]: https://github.com/opentodonet/rloggerd
-
+[5]: nagios-status-mklivestatus.pl
